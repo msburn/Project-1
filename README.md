@@ -181,7 +181,7 @@ As a **Bonus**, provide the specific commands the user will need to run to downl
 ```
 ansible-playbook install-elk.yml elk
 cd /etc/ansible/roles/
-ansible-playbook install-filebeat.yml webservers
-ansible-playbook install-metricbeat.yml webservers
+ansible-playbook filebeat-playbook.yml webservers
+ansible-playbook metricbeat-playbook.yml webservers
 ```
 - Navigate to http://13.77.124.52:5601/app/kibana to see if ELK is running.
